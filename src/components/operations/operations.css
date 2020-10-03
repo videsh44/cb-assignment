@@ -1,0 +1,28 @@
+.log__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.log__header__left {
+  font-size: 27px;
+  font-weight: 900;
+}
+
+.stats__box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #1f4979;
+  line-height: 60px;
+  color: #fff;
+  flex-wrap: wrap;
+}
+.stat__icon {
+  font-size: 30px;
+  color: #3994ca;
+}
+
+.theadDark thead[class*="ant-table-thead"] th {
+  background-color: #f3f3f3;
+  font-size: 12pt;
+}
