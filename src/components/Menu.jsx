@@ -144,6 +144,7 @@ const MenuIndex = (props) => {
                   color: "#D2625E",
                   fontSize: "21px",
                   cursor: "pointer",
+                  textDecoration: "underline",
                 }}
               >
                 <YoutubeOutlined style={{ marginRight: "5px" }} />
@@ -215,7 +216,8 @@ const MenuIndex = (props) => {
                   title={
                     <span
                       style={{
-                        fontSize: "20px",
+                        fontSize: "17px",
+                        textTransform: "uppercase",
                       }}
                     >
                       {item.icon} {item.label}

@@ -270,7 +270,7 @@ const Logbook = () => {
         </div>
         <div>
           <Input
-            placeholder="Search using Franchise Name"
+            placeholder="Input Search Text"
             prefix={<SearchOutlined style={{ color: "rgba(0,0,0,.25)" }} />}
             value={SearchfilterString}
             allowClear
@@ -298,7 +298,7 @@ const Logbook = () => {
           columns={columns}
           dataSource={data}
           loading={loading}
-          rowKey={(k, i) => i}
+          rowKey={(k, i) => k.id}
           pagination={{ pageSize: 5 }}
           scroll={{ x: 1300 }}
         />
