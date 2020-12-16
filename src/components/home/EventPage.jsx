@@ -200,7 +200,7 @@ const EventPage = () => {
         {createNewModalShow === true ? (
           <Modal
             style={{ width: "100%" }}
-            title="Add New Job"
+            title="Add New Event"
             closable={true}
             footer={null}
             onCancel={() => setCreateNewModalShow(false)}

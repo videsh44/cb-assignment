@@ -6,17 +6,23 @@ const Details = (props) => {
   const data = props.selectedDataForDetails;
   return (
     <div>
-      <Descriptions title="Student Info">
-        <Descriptions.Item label="Name">{data.eventName}</Descriptions.Item>
-        <Divider type="vertical" />
-        <Descriptions.Item label="Description">
+      <Descriptions title="Event Info">
+        <Descriptions.Item label="Name" span={3}>
+          {data.eventName}
+        </Descriptions.Item>
+
+        <Descriptions.Item label="Description" span={3}>
           {data.description}
         </Descriptions.Item>
-        <Divider type="vertical" />
-        <Descriptions.Item label={<span>Location</span>}>
+
+        <Descriptions.Item label="Location" span={3}>
           <EnvironmentOutlined /> {data.venue}
         </Descriptions.Item>
-        <Divider type="vertical" />
+
+        <Descriptions.Item label="Event on" span={3}>
+          {data.dateReceived}
+        </Descriptions.Item>
+
         <Descriptions.Item label="price">
           <span style={{ color: "green" }}>
             {" "}
@@ -25,9 +31,6 @@ const Details = (props) => {
         </Descriptions.Item>
         <Descriptions.Item label="Discount">
           {data.discountNumber} %
-        </Descriptions.Item>
-        <Descriptions.Item label="Event on">
-          {data.dateReceived}
         </Descriptions.Item>
       </Descriptions>
     </div>

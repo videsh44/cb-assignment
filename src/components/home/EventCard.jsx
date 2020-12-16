@@ -85,7 +85,7 @@ const EventCard = (props) => {
       {detailsModalShow === true ? (
         <Modal
           style={{ width: "100%" }}
-          title="Student Details"
+          title="Event Details"
           closable={true}
           footer={null}
           visible={detailsModalShow}
