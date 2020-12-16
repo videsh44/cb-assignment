@@ -7,11 +7,12 @@ const team = (state = initialState, action) => {
         ...state,
         {
           id: action.id,
-          franchise: action.franchise,
-          address: action.address,
-          customerName: action.customerName,
-          lossType: action.lossType,
-          jobStatus: action.jobStatus,
+          eventName: action.eventName,
+          description: action.description,
+          venue: action.venue,
+          discount: action.discount,
+          discountNumber: action.discountNumber,
+          price: action.price,
           dateReceived: action.dateReceived,
         },
       ];

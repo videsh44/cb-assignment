@@ -9,6 +9,7 @@ import history from "../history";
 import { connect } from "react-redux";
 import Home from "../components/home/Home";
 import Logbook from "./operations/Logbook";
+import EventPage from "./home/EventPage";
 
 const PrivateRoute = ({ component: Component, user, dispatch, ...rest }) => {
   {
@@ -45,11 +46,12 @@ const Routing = (props) => {
           <PrivateRoute
             path="/cb-assignment"
             exact
-            component={Home}
+            component={EventPage}
             user={user}
             dispatch={dispatch}
           />
 
+          {/**
           <PrivateRoute
             path="/logbook"
             exact
@@ -57,6 +59,8 @@ const Routing = (props) => {
             user={user}
             dispatch={dispatch}
           />
+
+           */}
 
           {/*  <Route path="/home" component={Home} /> */}
           {/*  <Route path="/login" component={Login} /> */}

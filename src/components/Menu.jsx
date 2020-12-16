@@ -21,7 +21,22 @@ const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
 
 const MenuIndex = (props) => {
-  /**MENU STARTS HERE */
+  const MenuItemsData = [
+    {
+      key: "sub2",
+      icon: <PieChartOutlined />,
+      label: "Events",
+      menuList: [
+        {
+          key: "/logbook",
+          onClick: () => history.push("/cb-assignment"),
+          label: "Events List",
+        },
+      ],
+    },
+  ];
+
+  /**MENU STARTS HERE 
   const MenuItemsData = [
     {
       key: "sub2",
@@ -106,7 +121,7 @@ const MenuIndex = (props) => {
     },
   ];
 
-  /**MENU ENDS HERE */
+  MENU ENDS HERE */
 
   return (
     <div>
@@ -138,59 +153,10 @@ const MenuIndex = (props) => {
                 />
               </span>
             </div>
-            <div style={{ width: "50%", textAlign: "center" }}>
-              <span
-                style={{
-                  color: "#D2625E",
-                  fontSize: "21px",
-                  cursor: "pointer",
-                  textDecoration: "underline",
-                }}
-              >
-                <YoutubeOutlined style={{ marginRight: "5px" }} />
-                How It Works ?
-              </span>
-            </div>
-            <div
-              style={{
-                width: "20%",
-                textAlign: "right",
-                display: "flex",
-                justifyContent: "space-around",
-                alignItems: "center",
-              }}
-            >
-              <div>
-                <Button
-                  type="primary"
-                  disabled
-                  // onClick={onAddCategoryClick}
-                >
-                  <PlusCircleOutlined /> Add Job
-                </Button>
-              </div>
-              <div>
-                <Badge count={5}>
-                  <BellOutlined style={{ fontSize: "25px" }} />
-                </Badge>
-              </div>
-              <div>
-                <span
-                  style={{
-                    background: "#7F7F7F",
-                    color: "#fff",
-                    padding: "14px 12px",
-                    borderRadius: "50px",
-                    fontWeight: 700,
-                  }}
-                >
-                  DH
-                </span>
-              </div>
-            </div>
           </div>
         </Header>
         <Layout>
+          {/**
           <Sider
             style={{
               overflow: "auto",
@@ -233,6 +199,7 @@ const MenuIndex = (props) => {
               ))}
             </Menu>
           </Sider>
+           */}
           <Layout style={{ padding: "0 24px 24px" }}>
             <Content
               style={{
